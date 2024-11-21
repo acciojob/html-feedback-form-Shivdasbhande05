@@ -9,11 +9,18 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<h3>Feedback Form</h3>
-	<form>
-		<input id="name" type ="text" minlength="3" maxlength ="50" aria-label="Yes">
-		<input id = "Portfolio" type ="URL" aria-label ="Yes">
-		<input id = "favColor" type ="Color"  aria-label="Yes">
-		<input id ="likeness" type = "range" min="1" max = "100" aria-label="yes">
+	<form method ="post">
+		<label for ="name">Name</label>
+		<input id= "name" type ="text" minlength ="3" maxlength ="50">
+
+		<label for="Portfolio">Portfolio</label>
+		<input id ="portfoliio" type ="URL" required>
+
+		<label>Color</label>
+		<input id =" favColor" type ="color">
+
+		<label>Likeness</label>
+		<input id =" likeness" type ="Range" min="1" max="100">
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
